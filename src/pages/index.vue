@@ -1,7 +1,7 @@
 <template>
 
-  <v-main>
 
+  <v-main>
     <v-sheet class="mx-auto text-center" :elevation="4" :width="600" rounded>
       <div class="mt-avatar">
         <v-avatar class="mt-3" size="220" image="@/assets/bokukoha_icon.jpg"></v-avatar>
