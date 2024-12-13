@@ -53,7 +53,7 @@ const links = [
     icon: "mdi-home",
     href: "https://map.bokukoha.dev",
     size: 45,
-    color: "white"
+    color: "black"
   }
 ]
 </script>
