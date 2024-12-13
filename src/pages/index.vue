@@ -1,6 +1,4 @@
 <template>
-
-
   <v-main>
     <v-container>
       <v-row class="mt-100">
@@ -16,10 +14,6 @@
             </a>
           </v-col>
         </v-sheet>
-      </v-row>
-
-      <v-row>
-
       </v-row>
     </v-container>
   </v-main>
