@@ -12,10 +12,14 @@
           <v-col>
             <a class="social-link" v-for="item in links" :key="item.title" :href="item.href" :title="item.title"
               rel="noopener noreferrer" target="_blank">
-              <v-icon class="mx-2 my-2" :color="item.color" :size="item.size" :icon="item.icon"></v-icon>
+              <v-btn class="mx-2" variant="plain" :size="item.size" :icon="item.icon"></v-btn>
             </a>
           </v-col>
         </v-sheet>
+      </v-row>
+
+      <v-row>
+
       </v-row>
     </v-container>
   </v-main>
@@ -32,21 +36,18 @@ const links = [
     icon: MisskeyIcon,
     href: 'https://misskey.io/@bokukoha',
     size: 45,
-    color: "white"
   },
   {
     title: 'Github',
     icon: GitHubIcon,
     href: 'https://github.com/Kohxax',
     size: 45,
-    color: "white"
   },
   {
     title: 'X',
     icon: XIcon,
     href: 'https://x.com/Kohxax',
     size: 45,
-    color: "white"
   }
 ]
 </script>
