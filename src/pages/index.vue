@@ -40,6 +40,20 @@ const links = [
     href: 'https://github.com/Kohxax',
     size: 45,
     color: "white"
+  },
+  {
+    title: 'X',
+    icon: XIcon,
+    href: 'https://x.com/Kohxax',
+    size: 45,
+    color: "white"
+  },
+  {
+    title: "test",
+    icon: "mdi-home",
+    href: "https://map.bokukoha.dev",
+    size: 45,
+    color: "white"
   }
 ]
 </script>
