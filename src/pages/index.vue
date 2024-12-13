@@ -2,36 +2,34 @@
 
 
   <v-main>
-    <v-sheet class="mx-auto text-center" :elevation="4" :width="600" rounded>
-      <div class="mt-avatar">
-        <v-avatar class="mt-3" size="220" image="@/assets/bokukoha_icon.jpg"></v-avatar>
-      </div>
-
-      <v-container class="mt-1">
-        <v-row>
-          <v-col align="center" justify="center">
-            <div>
-              <a v-for="item in links" :key="item.title" :href="item.href" :title="item.title" rel="noopener noreferrer"
-                target="_blank">
-                <v-icon class="mr-2 ml-2" :color="item.color" :size="item.size" :icon="item.icon"></v-icon>
-              </a>
-            </div>
+    <v-container>
+      <v-row class="mt-avatar">
+        <v-sheet class="mx-auto text-center" width="500px" :elevation="4" rounded>
+          <v-col>
+            <v-avatar size="220" image="@/assets/bokukoha_icon.jpg"></v-avatar>
           </v-col>
-        </v-row>
-      </v-container>
-    </v-sheet>
+
+          <v-col>
+            <a v-for="item in links" :key="item.title" :href="item.href" :title="item.title" rel="noopener noreferrer"
+              target="_blank">
+              <v-icon class="mx-2 my-2" :color="item.color" :size="item.size" :icon="item.icon"></v-icon>
+            </a>
+          </v-col>
+        </v-sheet>
+      </v-row>
+    </v-container>
   </v-main>
 </template>
 
 <script lang="ts" setup>
-import ViteIcon from "@/components/icons/ViteIcon.vue";
+import MisskeyIcon from "@/components/icons/MisskeyIcon.vue";
 import XIcon from "@/components/icons/XIcon.vue";
 import GitHubIcon from "@/components/icons/GithubIcon.vue";
 
 const links = [
   {
     title: 'Misskey.io',
-    icon: ViteIcon,
+    icon: MisskeyIcon,
     href: 'https://misskey.io/@bokukoha',
     size: 45,
     color: "white"
