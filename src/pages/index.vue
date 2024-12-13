@@ -3,15 +3,15 @@
 
   <v-main>
     <v-container>
-      <v-row class="mt-avatar">
+      <v-row class="mt-100">
         <v-sheet class="mx-auto text-center" width="500px" :elevation="4" rounded>
           <v-col>
             <v-avatar size="220" image="@/assets/bokukoha_icon.jpg"></v-avatar>
           </v-col>
 
           <v-col>
-            <a v-for="item in links" :key="item.title" :href="item.href" :title="item.title" rel="noopener noreferrer"
-              target="_blank">
+            <a class="social-link" v-for="item in links" :key="item.title" :href="item.href" :title="item.title"
+              rel="noopener noreferrer" target="_blank">
               <v-icon class="mx-2 my-2" :color="item.color" :size="item.size" :icon="item.icon"></v-icon>
             </a>
           </v-col>
@@ -52,7 +52,7 @@ const links = [
 </script>
 
 <style lang="css" scoped>
-.mt-avatar {
+.mt-100 {
   margin-top: 100px;
 }
 </style>
