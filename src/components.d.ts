@@ -11,12 +11,10 @@ declare module 'vue' {
     AppHeader: typeof import('./components/AppHeader.vue')['default']
     CloudflareIcon: typeof import('./components/icons/CloudflareIcon.vue')['default']
     GithubIcon: typeof import('./components/icons/GithubIcon.vue')['default']
-    HoverAction: typeof import('./components/HoverAction.vue')['default']
     MisskeyIcon: typeof import('./components/icons/MisskeyIcon.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     UbuntuIcon: typeof import('./components/icons/UbuntuIcon.vue')['default']
-    ViteIcon: typeof import('./components/icons/MisskeyIcon.vue')['default']
     XIcon: typeof import('./components/icons/XIcon.vue')['default']
   }
 }

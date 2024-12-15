@@ -1,19 +1,41 @@
 <template>
-  <v-main>
+  <v-main class="mt-60">
     <v-container>
-      <v-row class="mt-100">
-        <v-sheet class="mx-auto text-center" width="500px" :elevation="4" rounded>
-          <v-col>
-            <v-avatar size="220" image="@/assets/bokukoha_icon.jpg"></v-avatar>
-          </v-col>
+      <v-row>
+        <v-col cols="9">
+          <v-sheet class="d-flex flex-column align-center" :elevation="4" min-height="150vh" max-width="1000" rounded>
+            <v-card class="mt-2" max-width="400">
+              <v-img class="align-end text-white" height="200" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                cover>
+                <v-card-title>test</v-card-title>
+              </v-img>
 
-          <v-col>
-            <a class="social-link" v-for="item in links" :key="item.title" :href="item.href" :title="item.title"
-              rel="noopener noreferrer" target="_blank">
-              <v-btn class="mx-2" variant="plain" :size="item.size" :icon="item.icon"></v-btn>
-            </a>
-          </v-col>
-        </v-sheet>
+              <v-card-subtitle class="pt-4">
+                Number 10
+              </v-card-subtitle>
+
+              <v-card-text>
+                <div>Whitehaven Beach</div>
+
+                <div>Whitsunday Island, Whitsunday Islands</div>
+              </v-card-text>
+            </v-card>
+          </v-sheet>
+        </v-col>
+
+        <v-col cols="3">
+          <v-sheet class="d-flex flex-column align-center" :elevation="4" rounded>
+            <v-avatar class="mt-2" size="220"
+              image="@/assets/bokukoha_icon.jpg"></v-avatar>
+
+            <div class="d-flex justify-center">
+              <a v-for="item in links" :key="item.title" :href="item.href" :title="item.title" rel="noopener noreferrer"
+                target="_blank">
+                <v-btn class="mx-2" variant="plain" :size="item.size" :icon="item.icon"></v-btn>
+              </a>
+            </div>
+          </v-sheet>
+        </v-col>
       </v-row>
     </v-container>
   </v-main>
@@ -47,7 +69,7 @@ const links = [
 </script>
 
 <style lang="css" scoped>
-.mt-100 {
-  margin-top: 100px;
+.mt-60 {
+  margin-top: 60px;
 }
 </style>
