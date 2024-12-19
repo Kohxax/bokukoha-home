@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar :elevation="4">
+    <v-app-bar class="position-sticky" :elevation="4">
         <v-container fluid>
             <v-row>
                 <v-col class="mx-auto d-flex justify-space-between align-center" xs="11" sm="11" md="10" lg="9">
