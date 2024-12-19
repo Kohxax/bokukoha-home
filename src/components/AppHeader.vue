@@ -2,7 +2,7 @@
     <v-app-bar :elevation="4">
         <v-container fluid>
             <v-row>
-                <v-col class="mx-auto d-flex justify-space-between align-center" xs="12" sm="10" md="7" lg="7">
+                <v-col class="mx-auto d-flex justify-space-between align-center" xs="11" sm="11" md="10" lg="9">
                     <v-btn class="justify-center" @click="Home" fab icon>
                         <v-avatar image="@/assets/bokukoha_icon.jpg" size="42"></v-avatar>
                     </v-btn>
