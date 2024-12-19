@@ -3,35 +3,20 @@
     <v-container>
       <v-row class="justify-center">
         <v-col cols="12" md="12" lg="8" xl="6">
-          <v-sheet class="d-flex flex-column align-center rounded-lg" :elevation="4" min-height="150vh" max-width="1000" rounded>
-            <v-card class="mt-2" max-width="400">
-              <v-img class="align-end text-white" height="200" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                cover>
-                <v-card-title>test</v-card-title>
-              </v-img>
-
-              <v-card-subtitle class="pt-4">
-                Number 10
-              </v-card-subtitle>
-
-              <v-card-text>
-                <div>Whitehaven Beach</div>
-
-                <div>Whitsunday Island, Whitsunday Islands</div>
-              </v-card-text>
-            </v-card>
+          <v-sheet class="d-flex flex-column align-center rounded-lg" :elevation="4" min-height="150vh" max-width="1000"
+            rounded>
+            <h1>Blog Post here(WIP)</h1>
           </v-sheet>
         </v-col>
 
-        <v-col cols="12" lg="3" xl="2" class="order-last order-md-last">
+        <v-col cols="12" lg="4" xl="3" class="order-last order-md-last">
           <v-sheet class="d-flex flex-column align-center rounded-lg" :elevation="4" rounded>
-            <v-avatar class="mt-2" size="220" image="@/assets/bokukoha_icon.jpg"></v-avatar>
-
-            <div class="d-flex justify-center">
-              <a v-for="item in links" :key="item.title" :href="item.href" :title="item.title" rel="noopener noreferrer"
-                target="_blank">
-                <v-btn class="mx-2" variant="plain" :size="item.size" :icon="item.icon"></v-btn>
-              </a>
+            <v-avatar class="mt-2" size="200" image="@/assets/bokukoha_icon.jpg"></v-avatar>
+            <div class="mx-5 my-3 text-center">
+              <p class="text-h5 font-weight-bold">こは / Koha</p>
+              <p class="mt-3">自宅サーバー初心者です。</p>
+              <p class="mt-3">Java, Vue, Ubuntuあたりをゆるーく触ってます。</p>
+              <p class="mt-3">PCゲーム、エロゲー、散歩が好きです。</p>
             </div>
           </v-sheet>
         </v-col>
@@ -71,5 +56,9 @@ const links = [
 <style lang="css" scoped>
 .mt-60 {
   margin-top: 60px;
+}
+
+h1, p, v-avatar {
+  user-select: none;
 }
 </style>
