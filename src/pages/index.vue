@@ -1,5 +1,5 @@
 <template>
-  <v-main class="mt-60">
+  <v-main class="mt-40">
     <v-container>
       <v-row class="justify-center">
         <v-col cols="12" md="12" lg="8" xl="6">
@@ -54,8 +54,8 @@ const links = [
 </script>
 
 <style lang="css" scoped>
-.mt-60 {
-  margin-top: 60px;
+.mt-40 {
+  margin-top: 40px;
 }
 
 h1, p, v-avatar {
