@@ -35,3 +35,10 @@ const Powered = [
     }
 ]
 </script>
+
+<style scoped>
+p, div {
+    user-select: none;
+}
+
+</style>

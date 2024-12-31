@@ -10,6 +10,7 @@ declare module 'vue' {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     AppHeader: typeof import('./components/AppHeader.vue')['default']
     CloudflareIcon: typeof import('./components/icons/CloudflareIcon.vue')['default']
+    DiscordIcon: typeof import('./components/icons/DiscordIcon.vue')['default']
     GithubIcon: typeof import('./components/icons/GithubIcon.vue')['default']
     MisskeyIcon: typeof import('./components/icons/MisskeyIcon.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
