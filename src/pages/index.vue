@@ -50,7 +50,15 @@
         <v-sheet class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># 鯖とか</h1>
-            <p class="mt-3"> ProxmoxVEを突っ込んだ自宅サーバーで遊んでます。初心者だから何もわかんないです。JavaでのMinecraftプラグイン開発、このサイト作ってるvueとjavascriptあたり勉強中。</p>
+            <p class="mt-3"> メルカリとかでパーツ拾って組んだpcにProxmox入れて遊んでます。CPUはi7-6700K、RAMは48GBとかです。いろいろとやってみたいことはあるんですが、お金とストレージが足りないです。</p>
+          </div>
+        </v-sheet>
+      </v-col>
+      <v-col class="mt-1" cols="12" sm="7" md="6" lg="5" xl="4">
+        <v-sheet class="d-flex flex-column rounded-lg" :elevation="4" rounded>
+          <div class="mx-5 my-3 text-left">
+            <h1 class="text-h5 font-weight-bold"># このサイトについて</h1>
+            <p class="mt-3"> Vueで作ったものをCloudflare Pagesでビルド&デプロイして公開しています。自鯖でホストしてる全く同じ内容の別ページもあります。将来的にこのページをプロフィールにして、ブログサイトを解説したいなぁとか考えていたり。</p>
           </div>
         </v-sheet>
       </v-col>
