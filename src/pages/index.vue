@@ -40,7 +40,7 @@
       <v-col class="mt-1" cols="12" sm="7" md="6" lg="5" xl="4">
         <v-sheet class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
-            <h1 class="text-h5 font-weight-bold"># エロゲ</h1>
+            <h1 class="text-h5 font-weight-bold"># ADV</h1>
             <p class="mt-3">2024年5月から始めました！以下プレイ済みリスト (上からプレイ順)</p>
             <p class="mt-3"><strong>2024年</strong> <br> ・サノバウィッチ <br> ・天使☆騒々 RE-BOOT! <br> ・さくらの雲＊スカアレットの恋 <br> ・サクラノ詩 -櫻の森の上を舞う- <br> ・サクラノ刻 -櫻の森の下を歩む- <br> ・さくら、もゆ。-as the Night's, Reincarnation-</p>
           </div>
