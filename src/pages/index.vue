@@ -54,11 +54,11 @@
           </div>
         </v-sheet>
       </v-col>
-      <v-col class="mt-1" cols="12" sm="7" md="6" lg="5" xl="4">
+      <v-col cols="12" sm="7" md="6" lg="5" xl="4">
         <v-sheet class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
-            <h1 class="text-h5 font-weight-bold"># このサイトについて</h1>
-            <p class="mt-3"> Vueで作ったものをCloudflare Pagesでビルド&デプロイして公開しています。自鯖でホストしてる全く同じ内容の別ページもあります。将来的にこのページをプロフィールにして、ブログサイトを解説したいなぁとか考えていたり。</p>
+            <h1 class="text-h5 font-weight-bold"># リンク</h1>
+            <p class="mt-3"> <a href="https://status.bokukoha.dev/"><strong>ステータスページ</strong></a> <br> <a href="https://blog.bokukoha.dev/"><strong>ブログ</strong></a></p>
           </div>
         </v-sheet>
       </v-col>
