@@ -3,10 +3,9 @@
     <v-row class="justify-center align-center flex-column mt-10">
       <v-col cols="12" class="text-center">
         <v-avatar size="180" image="@/assets/bokukoha_icon.jpg"></v-avatar>
-
         <div class="text-center mt-3">
-          <a v-for="item in links" :key="item.title" :href="item.href" :title="item.title"
-            rel="noopener noreferrer" target="_blank">
+          <a v-for="item in links" :key="item.title" :href="item.href" :title="item.title" rel="noopener noreferrer"
+            target="_blank">
             <v-btn variant="plain" :size="item.size" :icon="item.icon"></v-btn>
           </a>
         </div>
@@ -15,7 +14,9 @@
         <v-sheet color="sheet" class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># 自己紹介</h1>
-            <p class="mt-3"><strong>名前</strong>こは <br> <strong>年齢</strong>20 <br> <strong>性別</strong>男 <br> <strong>趣味</strong>PCゲーム , 散歩 , 飲酒 , 音楽 , 聖地巡礼旅行 <br> <strong>言語</strong> JPN◎ EN〇</p>
+            <p class="mt-3"><strong>名前</strong>こは <br> <strong>年齢</strong>{{ age }} <br> <strong>性別</strong>男 <br>
+              <strong>趣味</strong>PCゲーム , 散歩 , 飲酒 , 音楽 , 聖地巡礼旅行 <br> <strong>言語</strong> JPN◎ EN〇
+            </p>
           </div>
         </v-sheet>
       </v-col>
@@ -42,7 +43,8 @@
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># ADV</h1>
             <p class="mt-3">2024年5月から始めました！以下プレイ済みリスト (上からプレイ順)</p>
-            <p class="mt-3"><strong>2024年</strong> <br> ・サノバウィッチ <br> ・天使☆騒々 RE-BOOT! <br> ・さくらの雲＊スカアレットの恋 <br> ・サクラノ詩 -櫻の森の上を舞う- <br> ・サクラノ刻 -櫻の森の下を歩む- <br> ・さくら、もゆ。-as the Night's, Reincarnation-</p>
+            <p class="mt-3"><strong>2024年</strong> <br> ・サノバウィッチ <br> ・天使☆騒々 RE-BOOT! <br> ・さくらの雲＊スカアレットの恋 <br> ・サクラノ詩
+              -櫻の森の上を舞う- <br> ・サクラノ刻 -櫻の森の下を歩む- <br> ・さくら、もゆ。-as the Night's, Reincarnation-</p>
           </div>
         </v-sheet>
       </v-col>
@@ -50,7 +52,8 @@
         <v-sheet color="sheet" class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># 鯖とか</h1>
-            <p class="mt-3"> メルカリとかでパーツ拾って組んだpcにProxmox入れて遊んでます。CPUはi7-6700K、RAMは48GBとかです。いろいろとやってみたいことはあるんですが、お金とストレージが足りないです。</p>
+            <p class="mt-3">
+              メルカリとかでパーツ拾って組んだpcにProxmox入れて遊んでます。CPUはi7-6700K、RAMは48GBとかです。いろいろとやってみたいことはあるんですが、お金とストレージが足りないです。</p>
           </div>
         </v-sheet>
       </v-col>
@@ -58,7 +61,8 @@
         <v-sheet color="sheet" class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># リンク</h1>
-            <p class="mt-3"> <a href="https://status.bokukoha.dev/"><strong>ステータスページ</strong></a> <br> <a href="https://blog.bokukoha.dev/"><strong>ブログ</strong></a></p>
+            <p class="mt-3"> <a href="https://status.bokukoha.dev/"><strong>ステータスページ</strong></a> <br> <a
+                href="https://blog.bokukoha.dev/"><strong>ブログ</strong></a></p>
           </div>
         </v-sheet>
       </v-col>
@@ -66,7 +70,9 @@
         <v-sheet color="sheet" class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># 適当</h1>
-            <p class="mt-3">ここまで読んでくださってありがとうございます。趣味あう人と話すのは楽しくて好きなので、気軽に話しかけてください。Discord含むゲームとかのフレ申請は知り合いなら通します！よろしくお願いします！</p>
+            <p class="mt-3">
+              ここまで読んでくださってありがとうございます。趣味あう人と話すのは楽しくて好きなので、気軽に話しかけてください。Discord含むゲームとかのフレ申請は知り合いなら通します！よろしくお願いします！
+            </p>
           </div>
         </v-sheet>
       </v-col>
@@ -79,6 +85,7 @@ import MisskeyIcon from "@/components/icons/MisskeyIcon.vue";
 import XIcon from "@/components/icons/XIcon.vue";
 import GitHubIcon from "@/components/icons/GithubIcon.vue";
 import DiscordIcon from "@/components/icons/DiscordIcon.vue";
+import { ref } from 'vue';
 
 const links = [
   {
@@ -106,6 +113,26 @@ const links = [
     size: 45,
   },
 ]
+
+const birthDate = "2004-08-27";
+function calculateAge(birthDateString: string): number {
+  const today = new Date();
+  const birthDate = new Date(birthDateString);
+
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const hasBirthdayPassedThisYear =
+    today.getMonth() > birthDate.getMonth() ||
+    (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+
+  if (!hasBirthdayPassedThisYear) {
+    age--;
+  }
+
+  return age;
+}
+
+const age = ref<number>(calculateAge(birthDate));
+
 </script>
 
 <style lang="css" scoped>
@@ -114,7 +141,7 @@ v-avatar,
 p {
   user-select: none;
   opacity: 0.9;
-  color:'#FFFFFF';
+  color: '#FFFFFF';
 }
 
 p {
@@ -124,5 +151,4 @@ p {
 strong {
   margin-right: 10px;
 }
-
 </style>
