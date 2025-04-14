@@ -12,11 +12,21 @@ import 'vuetify/styles'
 // Composables
 import { createVuetify } from 'vuetify'
 import { de } from 'vuetify/locale'
+import { createApp } from 'vue'
 
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
   theme: {
-    defaultTheme: 'dark',
-  },
+    defaultTheme: 'koha',
+    themes: {
+      koha: {
+        dark: true,
+        colors: {
+          background: '#303030',
+          surface: '#303030',
+          sheet: '#424242'
+        }
+      }
+    }
+  }   
 })
-

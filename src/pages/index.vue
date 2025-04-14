@@ -12,7 +12,7 @@
         </div>
       </v-col>
       <v-col cols="12" sm="7" md="6" lg="5" xl="4">
-        <v-sheet class="d-flex flex-column rounded-lg" :elevation="4" rounded>
+        <v-sheet color="sheet" class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># 自己紹介</h1>
             <p class="mt-3"><strong>名前</strong>こは <br> <strong>年齢</strong>20 <br> <strong>性別</strong>男 <br> <strong>趣味</strong>PCゲーム , 散歩 , 飲酒 , 音楽 , 聖地巡礼旅行 <br> <strong>言語</strong> JPN◎ EN〇</p>
@@ -20,7 +20,7 @@
         </v-sheet>
       </v-col>
       <v-col class="mt-1" cols="12" sm="7" md="6" lg="5" xl="4">
-        <v-sheet class="d-flex flex-column rounded-lg" :elevation="4" rounded>
+        <v-sheet color="sheet" class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># ゲーム</h1>
             <p class="mt-3"><strong>原神</strong> 神里綾華、ヌヴィレット、フリーナ、珊瑚宮心海</p>
@@ -30,7 +30,7 @@
         </v-sheet>
       </v-col>
       <v-col class="mt-1" cols="12" sm="7" md="6" lg="5" xl="4">
-        <v-sheet class="d-flex flex-column rounded-lg" :elevation="4" rounded>
+        <v-sheet color="sheet" class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># 音楽</h1>
             <p class="mt-3">これといってどのアーティストが好きとかはないですが、YunomiやAiobahnみたいな電子音楽、HARDCORE TANO*Cとか、あとは普通にJ-popも聞きます。</p>
@@ -38,7 +38,7 @@
         </v-sheet>
       </v-col>
       <v-col class="mt-1" cols="12" sm="7" md="6" lg="5" xl="4">
-        <v-sheet class="d-flex flex-column rounded-lg" :elevation="4" rounded>
+        <v-sheet color="sheet" class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># ADV</h1>
             <p class="mt-3">2024年5月から始めました！以下プレイ済みリスト (上からプレイ順)</p>
@@ -47,7 +47,7 @@
         </v-sheet>
       </v-col>
       <v-col class="mt-1" cols="12" sm="7" md="6" lg="5" xl="4">
-        <v-sheet class="d-flex flex-column rounded-lg" :elevation="4" rounded>
+        <v-sheet color="sheet" class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># 鯖とか</h1>
             <p class="mt-3"> メルカリとかでパーツ拾って組んだpcにProxmox入れて遊んでます。CPUはi7-6700K、RAMは48GBとかです。いろいろとやってみたいことはあるんですが、お金とストレージが足りないです。</p>
@@ -55,7 +55,7 @@
         </v-sheet>
       </v-col>
       <v-col cols="12" sm="7" md="6" lg="5" xl="4">
-        <v-sheet class="d-flex flex-column rounded-lg" :elevation="4" rounded>
+        <v-sheet color="sheet" class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># リンク</h1>
             <p class="mt-3"> <a href="https://status.bokukoha.dev/"><strong>ステータスページ</strong></a> <br> <a href="https://blog.bokukoha.dev/"><strong>ブログ</strong></a></p>
@@ -63,7 +63,7 @@
         </v-sheet>
       </v-col>
       <v-col class="mt-1" cols="12" sm="7" md="6" lg="5" xl="4">
-        <v-sheet class="d-flex flex-column rounded-lg" :elevation="4" rounded>
+        <v-sheet color="sheet" class="d-flex flex-column rounded-lg" :elevation="4" rounded>
           <div class="mx-5 my-3 text-left">
             <h1 class="text-h5 font-weight-bold"># 適当</h1>
             <p class="mt-3">ここまで読んでくださってありがとうございます。趣味あう人と話すのは楽しくて好きなので、気軽に話しかけてください。Discord含むゲームとかのフレ申請は知り合いなら通します！よろしくお願いします！</p>
@@ -110,12 +110,14 @@ const links = [
 
 <style lang="css" scoped>
 h1,
-v-avatar {
+v-avatar,
+p {
   user-select: none;
+  opacity: 0.9;
+  color:'#FFFFFF';
 }
 
 p {
-  user-select: none;
   line-height: 28px;
 }
 
